@@ -34,14 +34,14 @@ void main(void)
 	printf("<< 여행을 시작하시겠습니까? >>\n예:Y 아니오:N\n\n입력>> ");
 	scanf_s("%c", &start);getchar();
 
-	if (start == 'Y') {
+	if (start == 'Y' || start == 'y') {
 
-		printf("현재위치 : %d, 시작금액 : %d \n\n", position, money);
+		printf("현재위치 : %d, 시작금액 : %d \n엔터키를 입력할 때마다 주사위가 던져집니다.\n\n", position, money);
 
 		// 무한반복
 		while (1)
 		{
-			//엔터키를 눌러서 진행시켜
+			//엔터키를 눌러서 진행시키기
 			getchar();
 
 			/* 던짐 */
